@@ -3,7 +3,7 @@ package CODING_NINJA;
 public class problem_00 {
 
     public static boolean armstrongNumber(int n) {
-        int orignal = n;
+        int orignal = n; // to store the original value for the comparison.
 
         int temp = n;
         int count =0;
@@ -12,7 +12,7 @@ public class problem_00 {
             count++;
         }
 
-        temp = n;
+        temp = n;// bcs the temp became 0 while counting
         int sum =0;
         while(temp>0){
             int lastDigit = temp%10;
