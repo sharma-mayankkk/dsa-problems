@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Recursion;
 import java.util.Scanner;
 //Print 1 to N using Recursion:
 

@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Recursion;
 
 //Understand recursion by print something N times:
 public class recursion_00 {

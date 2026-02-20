@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Recursion;
 //Reverse an array
 public class recursion_06 {
     public static void reverseArray(int[] arr, int l, int r){

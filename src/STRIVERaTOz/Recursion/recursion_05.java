@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Recursion;
 //Factorial of a given number
 public class recursion_05 {
     public static int factorial(int n){

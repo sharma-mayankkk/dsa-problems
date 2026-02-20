@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Recursion;
 import java.util.Scanner;
 //Print name N times using recursion
 public class recursion_01 {

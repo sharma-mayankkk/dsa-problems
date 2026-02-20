@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Recursion;
 
 //Sum of First N Numbers:
 public class recursion_04 {
