@@ -1,4 +1,4 @@
-package STRIVERaTOz;
+package STRIVERaTOz.Array;
 
 public class array_05 {
     public static int linearSearch(int[] arr, int target) {
