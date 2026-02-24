@@ -1,4 +1,4 @@
-package STRIVERaTOz.Array;
+package STRIVERaTOz.Array.Easy;
 
 //Left Rotate Array by K Places
 public class array_03 {

@@ -1,6 +1,4 @@
-package STRIVERaTOz.Array;
-
-import javax.swing.plaf.IconUIResource;
+package STRIVERaTOz.Array.Easy;
 
 //Find Maximum consecutive ones in the array:
 public class array_09 {

@@ -1,4 +1,4 @@
-package STRIVERaTOz.Array;
+package STRIVERaTOz.Array.Easy;
 //Find the missing number in the array optimal solution with two approaches.
 public class array_08 {
 

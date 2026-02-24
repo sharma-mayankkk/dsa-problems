@@ -1,4 +1,4 @@
-package STRIVERaTOz.Array;
+package STRIVERaTOz.Array.Easy;
 
 import java.util.Arrays;
 
