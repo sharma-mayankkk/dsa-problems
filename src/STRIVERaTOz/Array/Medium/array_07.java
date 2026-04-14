@@ -9,58 +9,73 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class array_07 {
-    public static boolean linearSearch(int[] arr, int target){
-       for(int i: arr){
-           if(i==target) return true;
-       }
-       return false;
+    public static boolean linearSearch(int[] arr, int target) {
+        for (int i : arr) {
+            if (i == target) return true;
+        }
+        return false;
     }
 
     //BruteForce solution;
-    public static int longestSequence(int[] arr){
-        int longest =1;
-        for(int i: arr){
+    public static int longestSequence(int[] arr) {
+        int longest = 1;
+        for (int i : arr) {
             int x = i;
             int count = 1;
-            while(linearSearch(arr, x + 1)){
-                x=x+1;
-                count+=1;
+            while (linearSearch(arr, x + 1)) {
+                x = x + 1;
+                count += 1;
             }
-            longest = Math.max(longest,count);
+            longest = Math.max(longest, count);
         }
         return longest;
     }
 
     //Better Solution:
-    public static int longestSeq(int[] arr){
+    public static int longestSeq(int[] arr) {
         Arrays.sort(arr);
         int longest = 1, currCount = 0, lastSmaller = Integer.MIN_VALUE;
-        for(int i: arr){
-            if(i-1 == lastSmaller){
-                currCount+=1;
+        for (int i : arr) {
+            if (i - 1 == lastSmaller) {
+                currCount += 1;
                 lastSmaller = i;
             } else if (i != lastSmaller) {
                 currCount = 1;
                 lastSmaller = i;
             }
-            longest = Math.max(longest,currCount);
+            longest = Math.max(longest, currCount);
         }
 
         return longest;
     }
-    //Optimal solution:(incomplete)
+//    Optimal solution:
 
-//    public static int longestSequence2(int[] arr){
-//        if(arr.length ==0) return 0;
-//        int longest = 1;
-//        Set<Integer> st = new HashSet<>();
-//
-//        for(int i = 0; i<arr.length; i++){
-//
-//        }
-//    }
+    public static int longestSequence2(int[] arr) {
+        if (arr.length == 0) return 0;
+        int longest = 1;
+        Set<Integer> st = new HashSet<>();
+
+        for (int i : arr) {
+            st.add(i);
+        }
+
+        for (int i : st) {
+            if (!st.contains(i - 1)) {
+                int count = 1;
+                int x = i;
+
+                while (st.contains(x + 1)) {
+                    x += 1;
+                    count += 1;
+                }
+                longest = Math.max(longest, count);
+            }
+        }
+        return longest;
+    }
+
     public static void main(String[] args) {
-        int[] arr ={1,2,7,1,1,2,2,4,9,8,3};
-        System.out.println(longestSeq(arr));
+        int[] arr = {1, 2, 7, 1, 1, 2, 2, 4, 9, 8, 3};
+        System.out.println(longestSequence2(arr));
     }
 }
