@@ -1,6 +1,5 @@
 package STRIVERaTOz.Array.Hard;
-
-import java.net.Inet4Address;
+//4 sum problem:
 import java.util.*;
 
 public class array_03 {
