@@ -44,36 +44,8 @@ public class array_07 {
         return new int[]{missing, repeating};
     }
 
-    //optimal solution-1:(sum method) : TC-O(n) and SC-O(1);
-    public static int[] findMissingNumber3(int[] arr) {
-        long n = arr.length;
-        //sum of all elements of the array - sum of 1 to n integers: S-Sn = x-y
-        //sum of square of all elements of the array - sum of square of 1 to n integers: S2-S2n = x^2-y^2
-
-        long s = 0, s2 = 0;  //sum/square sum of elements of array
-
-        long sn = (n * (n + 1)) / 2;
-        long s2n = (n * (n + 1) * (2 * n + 1)) / 6;
-
-        for (int i : arr) {
-            s += i;
-            s2 += (long) i * i;
-        }
-
-        long val1 = s - sn; //x-y;
-        long val2 = s2 - s2n;
-        val2 /= val1; //x+y;
-
-        long x = (val1 + val2) / 2;
-        long y = x - val1;
-
-        return new int[]{(int) x, (int) y}; //x = repeating and y= missing;
-
-    }
-
-
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 4, 5};
-        System.out.println(Arrays.toString(findMissingNumber3(arr)));
+        System.out.println(Arrays.toString(findMissingNumber2(arr)));
     }
 }
