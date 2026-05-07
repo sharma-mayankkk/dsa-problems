@@ -60,7 +60,6 @@ public class leetCode_493 {
 
         int count = 0;
         if (low >= high) return count;
-
         int mid = (low + high) / 2;
 
         count += mergeSort(arr, low, mid);
