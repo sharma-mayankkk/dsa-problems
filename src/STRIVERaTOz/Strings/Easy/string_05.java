@@ -1,4 +1,4 @@
-package STRIVERaTOz.Strings;
+package STRIVERaTOz.Strings.Easy;
 
 //Check if one string is rotation of another
 //Problem Statement: Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.

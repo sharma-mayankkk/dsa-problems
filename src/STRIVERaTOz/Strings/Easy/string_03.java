@@ -1,4 +1,4 @@
-package STRIVERaTOz.Strings;
+package STRIVERaTOz.Strings.Easy;
 //Longest common prefix:
 
 public class string_03 {

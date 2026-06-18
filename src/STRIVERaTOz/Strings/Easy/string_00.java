@@ -1,4 +1,4 @@
-package STRIVERaTOz.Strings;
+package STRIVERaTOz.Strings.Easy;
 //Remove Outermost Parentheses
 //Problem Statement: A valid parentheses string is defined by the following rules:
 //
