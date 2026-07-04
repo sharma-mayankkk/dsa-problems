@@ -1,4 +1,4 @@
-package STRIVERaTOz.LinkedList;
+package STRIVERaTOz.LinkedList.SinglyLL;
 
 public class LL_01_SearchElement {
     static class Node {

@@ -1,4 +1,4 @@
-package STRIVERaTOz.LinkedList;
+package STRIVERaTOz.LinkedList.SinglyLL;
 
 public class LL_02_FindMiddle {
     static class Node{

@@ -1,4 +1,4 @@
-package STRIVERaTOz.LinkedList;
+package STRIVERaTOz.LinkedList.SinglyLL;
 
 public class LL_00_Basics {
 
