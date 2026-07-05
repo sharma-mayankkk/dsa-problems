@@ -19,15 +19,28 @@ public class leetCode_206 {
         }
     }
 
+    //iterative:
     public ListNode reverseList(ListNode head) {
         ListNode temp = head, prev = null;
 
-        while(temp!=null){
+        while (temp != null) {
             ListNode front = temp.next;
             temp.next = prev;
             prev = temp;
             temp = front;
         }
         return prev;
+    }
+
+    //recursive:
+    public ListNode reverseList2(ListNode head) {
+        if (head == null || head.next == null) return head;
+
+        ListNode newHead = reverseList2(head.next);
+        ListNode front = head.next;
+        front.next = head;
+        head.next = null;
+
+        return newHead;
     }
 }
