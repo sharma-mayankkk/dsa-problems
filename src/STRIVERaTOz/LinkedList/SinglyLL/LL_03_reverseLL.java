@@ -30,17 +30,29 @@ public class LL_03_reverseLL {
         }
     }
 
-    //Optimal solution:
-    public static Node reverseLL2(Node head){
+    //Optimal solution:(iterative)
+    public static Node reverseLL2(Node head) {
         Node temp = head, prev = null;
 
-        while(temp!=null){
+        while (temp != null) {
             Node front = temp.next;
             temp.next = prev;
             prev = temp;
             temp = front;
         }
         return prev;
+    }
+
+    //recursive approach:
+    public static Node reverseLL3(Node head) {
+        if (head == null || head.next == null) return head;
+
+        Node newHead = reverseLL3(head.next);
+        Node front = head.next;
+        front.next = head;
+        head.next = null;
+
+        return newHead;
     }
 
     public static void display(Node head) {
@@ -52,6 +64,7 @@ public class LL_03_reverseLL {
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
         Node first = new Node(10);
         Node second = new Node(20);
