@@ -29,6 +29,30 @@ public class LL_06_lengthOfLoop {
         return 0;
     }
 
+    //Optimal solution:
+    public static int findLen(Node slow, Node fast) {
+        fast = fast.next;
+        int count = 1;
+        while (slow != fast) {
+            fast = fast.next;
+            count++;
+        }
+        return count;
+    }
+
+    public static int lengthOfLoop2(Node head) {
+        Node fast = head, slow = head;
+        int count = 0;
+
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if (fast == slow) return findLen(slow, fast);
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
         Node first = new Node(10);
         Node second = new Node(20);
