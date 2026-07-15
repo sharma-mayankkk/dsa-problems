@@ -14,7 +14,7 @@ public class LL_14_addOne {
             this.next = null;
         }
     }
-
+    //Iterative solution:
     public static Node reverse(Node head) {
         Node temp = head, prev = null;
 
@@ -43,7 +43,6 @@ public class LL_14_addOne {
                 carry = 1;
             }
 
-
             temp = temp.next;
         }
 
@@ -55,5 +54,31 @@ public class LL_14_addOne {
         }
 
         return reverse(head);
+    }
+
+    //recursive Solution:
+    public static int findCarry(Node temp){
+        if(temp == null) return 1;
+        int carry = findCarry(temp.next);
+
+        temp.data += carry;
+
+        if(temp.data<10){
+            return 0;
+        }
+
+        temp.data = 0;
+        return 1;
+    }
+    public static Node addOne2(Node head){
+        int carry = findCarry(head);
+
+        if(carry == 1){
+            Node newNode = new Node(1);
+            newNode.next = head;
+            return newNode;
+        }
+
+        return head;
     }
 }
