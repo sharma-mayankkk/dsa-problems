@@ -36,8 +36,8 @@ public class DLL_02_FindAllPairWithSum {
     }
 
     //Optimal solution:
-    public static ArrayList<ArrayList<Integer>> findAllPairs2(Node head, int sum) {
-        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+    public static ArrayList<int[]> findAllPairs2(Node head, int sum) {
+        ArrayList<int[]> ans = new ArrayList<>();
         Node left = head, right = head;
 
         while (right.next != null) {
@@ -46,7 +46,7 @@ public class DLL_02_FindAllPairWithSum {
 
         while (left.data < right.data) {
             if (left.data + right.data == sum) {
-                ans.add(new ArrayList<>(Arrays.asList(left.data, right.data)));
+                ans.add(new int[]{left.data, right.data});
                 left = left.next;
                 right = right.prev;
             } else if (left.data + right.data < sum) {
