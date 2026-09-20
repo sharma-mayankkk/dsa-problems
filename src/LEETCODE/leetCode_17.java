@@ -12,7 +12,7 @@ public class leetCode_17 {
     public static void solve(int index, String digit, StringBuilder temp, Map<Character, String> mp, List<String> ans) {
         if (index >= digit.length()) {
             ans.add(temp.toString());
-            return;
+            return; 
         }
 
         char ch = digit.charAt(index);
