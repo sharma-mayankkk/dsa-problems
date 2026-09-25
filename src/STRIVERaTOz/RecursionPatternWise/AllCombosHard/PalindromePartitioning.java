@@ -7,7 +7,7 @@ package STRIVERaTOz.RecursionPatternWise.AllCombosHard;
 //Output : [ [ "b", "a", "a"] , [ "b", "aa" ] ]
 //
 //Explanation : Above all are the possible ways in which the string can be partitioned so that each substring is a palindrome.
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.List;
 
 public class PalindromePartitioning {
