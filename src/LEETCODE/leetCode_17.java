@@ -3,7 +3,7 @@ package LEETCODE;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.Map; 
 
 //Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
 //
@@ -16,7 +16,7 @@ public class leetCode_17 {
         }
 
         char ch = digit.charAt(index);
-        String str = mp.get(ch);
+        String str = mp.get(ch); 
 
         for (int i = 0; i < str.length(); i++) {
             temp.append(str.charAt(i));

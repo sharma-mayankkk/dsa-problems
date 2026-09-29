@@ -7,7 +7,7 @@ import java.util.List;
 public class SubsetTwo {
     public static void getAllSubset(int[] arr, List<List<Integer>> ans, int i, List<Integer> subset) {
         if (i == arr.length) {
-            ans.add(new ArrayList<>(subset));
+            ans.add(new ArrayList<>(subset)); 
             return;
         }
 
