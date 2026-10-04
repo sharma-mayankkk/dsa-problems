@@ -1,4 +1,4 @@
-package STRIVERaTOz.BitManipulation;
+package STRIVERaTOz.BitManipulation.Problems;
 
 //Given two integers start and goal. Flip the minimum number of bits of start integer to convert it into goal integer.
 //
