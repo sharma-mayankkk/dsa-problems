@@ -1,7 +1,7 @@
 package LEETCODE;
 
 //Given the head of a linked list, remove the nth node from the end of the list and return its head.
-public class LeetCode_19 {
+public class leetCode_19 {
     public class ListNode {
         int val;
         ListNode next;

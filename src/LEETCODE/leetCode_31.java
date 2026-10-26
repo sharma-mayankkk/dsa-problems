@@ -1,7 +1,7 @@
 package LEETCODE;
 
 //31. Next Permutation
-public class leetcode_31 {
+public class leetCode_31 {
     public void nextPermutation(int[] nums) {
         int n = nums.length;
         int index = -1;
