@@ -13,7 +13,7 @@ package LEETCODE;
 //Explanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1].
 public class leetCode_1248 {
     public static int count(int[] arr, int k) {
-        if (k < 0) return 0;
+        if (k < 0) return 0; 
         int l = 0, r = 0, sum = 0, count = 0;
 
         while (r < arr.length) {
