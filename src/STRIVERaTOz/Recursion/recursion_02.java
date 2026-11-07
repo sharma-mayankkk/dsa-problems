@@ -12,7 +12,7 @@ public class recursion_02 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the First number:");
         int i = sc.nextInt();
-        System.out.println("Enter the value of N");
+        System.out.println("Enter the value of N"); 
         int n = sc.nextInt();
         print1ToN(i,n);
     }
