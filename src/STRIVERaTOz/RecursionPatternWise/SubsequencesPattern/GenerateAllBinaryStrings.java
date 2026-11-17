@@ -23,7 +23,7 @@ public class GenerateAllBinaryStrings {
         // Choose 1
         if (sb.isEmpty() || sb.charAt(sb.length() - 1) != '1') {
             sb.append('1');
-            generate(n, sb, ans);
+            generate(n, sb, ans); 
             sb.deleteCharAt(sb.length() - 1);
         }
     }
