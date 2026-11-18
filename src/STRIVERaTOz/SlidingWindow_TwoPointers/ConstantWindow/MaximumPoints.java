@@ -12,7 +12,7 @@ public class MaximumPoints {
         int rSum = 0, lSum = 0, maxSum = 0;
         for (int i = 0; i <= k - 1; i++) {
             lSum += arr[i];
-        }
+        }  
         maxSum = lSum;
 
         int idx = arr.length - 1;
