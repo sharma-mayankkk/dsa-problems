@@ -24,7 +24,7 @@ public class leetCode_1248 {
             }
             count += r - l + 1;
             r++;
-        }
+        } 
         return count;
     }
 

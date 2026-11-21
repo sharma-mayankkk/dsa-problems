@@ -31,7 +31,7 @@ public class fractionalKnapsack {
             if (items[i].weight <= w) {
                 ans += items[i].value;
                 w -= items[i].weight;
-            } else {
+            } else { 
                 ans += ((double) items[i].value / items[i].weight) * w;
                 break;
             }

@@ -3,7 +3,7 @@ package LEETCODE;
 import java.util.Arrays;
 
 public class leetCode_03 {
-    public int lengthOfLongestSubstring(String s) {
+    public int lengthOfLongestSubstring(String s) { 
         int[] hash = new int[255];
         Arrays.fill(hash, -1);
 
