@@ -19,7 +19,7 @@ public class QueueUsingArrays {
     // Check if queue is full
     public boolean isFull() {
         return rear == capacity - 1;
-    }
+    } 
 
 
     // Insert element
