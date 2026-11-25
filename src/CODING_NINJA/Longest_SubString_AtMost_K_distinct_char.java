@@ -21,7 +21,7 @@ public class Longest_SubString_AtMost_K_distinct_char {
                 map.put(str.charAt(l), map.get(str.charAt(l)) - 1);
                 if (map.get(str.charAt(l)) == 0) map.remove(str.charAt(l));
                 l++;
-            }
+            } 
 
             if (map.size() <= k) {
                 maxLen = Math.max(maxLen, r - l + 1);
