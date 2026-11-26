@@ -15,7 +15,7 @@ public class leetCode_1004 {
             if (nums[r] == 0) zeroes++; 
             if (zeroes > k) {
                 if (nums[l] == 0) zeroes--;
-                l++;
+                l++; 
             }
             if (zeroes <= k) {
                 int len = r - l + 1;
