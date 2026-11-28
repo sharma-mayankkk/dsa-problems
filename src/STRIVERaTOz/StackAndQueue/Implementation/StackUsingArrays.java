@@ -2,7 +2,7 @@ package STRIVERaTOz.StackAndQueue.Implementation;
 
 public class StackUsingArrays {
     private int[] stack;
-    private int top;
+    private int top; 
     private int capacity; 
 
     public StackUsingArrays(int capacity) {
